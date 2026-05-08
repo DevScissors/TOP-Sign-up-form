@@ -59,8 +59,10 @@
 }
 
 input {
-  width: 200px;
-  border: 1px solid #e5e7eb;
+  width: 300px;
+  height: 30px;
+  border: 1px solid lightgray;
+  font-size: 18px;
 }
 
 input:focus-visible {
@@ -82,7 +84,6 @@ input:user-valid {
   padding: 5px 15px;
   position: relative;
   left: 50px;
-  top: -4vh;
   background-color: darkblue;
   color: white;
   border-radius: 5px;
@@ -91,6 +92,15 @@ input:user-valid {
 
 .login-section {
   position: relative;
-  top: -10vh;
+  top: -4vh;
   padding: 20px 50px;
+}
+
+.password-requirements {
+  font-size: 12px;
+  color: gray;
+  font-style: italic;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
