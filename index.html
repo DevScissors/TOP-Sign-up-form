@@ -1,101 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="main-wrapper">
-      <div class="main">
-        <div class="form-image">
-          <!-- <img class="vertical-building-img" src="./images/axville-dp7qXItvT84-unsplash.jpg"
-                    alt="Vertical look at building"> -->
-          <span class="img-credit"
-            >Photo by
-            <a
-              href="https://unsplash.com/@axville?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >Axville</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/modern-building-interior-with-geometric-patterns-dp7qXItvT84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >Unsplash</a
-            >
-          </span>
+        <div class="main">
+            <div class="form-image">
+                <div class="transparent-logo-wrapper">
+                    <img class="scissors-logo" src="./images/codewithscissors_logo.png" />
+                    <div class="logo-text">DevScissors</div>
+                </div>
+                <span class="img-credit">Photo by
+                    <a
+                        href="https://unsplash.com/@axville?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Axville</a>
+                    on
+                    <a
+                        href="https://unsplash.com/photos/modern-building-interior-with-geometric-patterns-dp7qXItvT84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </span>
+            </div>
+            <div class="form-section-wrapper">
+                <div class="form-header">
+                    <h2>
+                        This is not a real online service! You know you need something
+                        like this in your life to help you realize your deepest dreams.
+                        Sign up
+                        <em>now</em> to get started.
+                    </h2>
+                    <h3>You <em>know</em> you want to.</h3>
+                </div>
+                <form class="form-inputs" id="form_odin" action="#" method="post">
+                    <div class="form-motivation-message">Lets do this!</div>
+                    <div class="input-field">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" />
+                    </div>
+                    <div class="input-field">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" />
+                    </div>
+                    <div class="input-field">
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+                    </div>
+                    <div class="input-field">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" />
+                    </div>
+                    <div class="input-field">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required />
+                        <ul class="password-requirements">
+                            <li>Must be at least 8 characters long</li>
+                            <li>Must include one upper case letter</li>
+                            <li>Must include one lower case letter</li>
+                            <li>Must include at least one number</li>
+                            <li>Must include at least one special character(@$!%*?&)</li>
+                        </ul>
+                    </div>
+                    <div class="input-field">
+                        <label for="confirm_password">*Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required />
+                    </div>
+                </form>
+                <button type="submit" class="submit-btn" form="form_odin">
+                    Create Account
+                </button>
+                <div class="login-section">
+                    Already have an account?
+                    <a href="#">Log In</a>
+                </div>
+            </div>
         </div>
-        <div class="form-section-wrapper">
-          <div class="form-header">
-            <h2>
-              This is not a real online service! You know you need something
-              like this in your life to help you realize your deepest dreams.
-              Sign up
-              <em>now</em> to get started.
-            </h2>
-            <h3>You <em>know</em> you want to.</h3>
-          </div>
-          <form class="form-inputs" id="form_odin" action="#" method="post">
-            <div class="form-motivation-message">Lets do this!</div>
-            <div class="input-field">
-              <label for="first_name">First Name</label>
-              <input type="text" id="first_name" name="first_name" />
-            </div>
-            <div class="input-field">
-              <label for="last_name">Last Name</label>
-              <input type="text" id="last_name" name="last_name" />
-            </div>
-            <div class="input-field">
-              <label for="email">*Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@mail.com"
-                required
-              />
-            </div>
-            <div class="input-field">
-              <label for="phone_number">Phone Number</label>
-              <input type="tel" id="phone_number" name="phone_number" />
-            </div>
-            <div class="input-field">
-              <label for="password">*Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-                required
-              />
-              <ul class="password-requirements">
-                <li>Must be at least 8 characters long</li>
-                <li>Must include one upper case letter</li>
-                <li>Must include one lower case letter</li>
-                <li>Must include at least one number</li>
-                <li>Must include at least one special character(@$!%*?&)</li>
-              </ul>
-            </div>
-            <div class="input-field">
-              <label for="confirm_password">*Confirm Password</label>
-              <input
-                type="password"
-                id="confirm_password"
-                name="confirm_password"
-                required
-              />
-            </div>
-          </form>
-          <button type="submit" class="submit-btn" form="form_odin">
-            Create Account
-          </button>
-          <div class="login-section">
-            Already have an account?
-            <a href="#">Log In</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
