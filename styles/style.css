@@ -29,8 +29,8 @@
 }
 
 .form-header {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 20px;
+  font-family: Poppins, "Arial Narrow Bold", sans-serif;
+  padding: 20px 50px;
 }
 
 .form-motivation-message {
@@ -45,36 +45,52 @@
   align-content: center;
   gap: 20px;
   width: 50vw;
-  padding: 20px;
+  padding: 20px 50px;
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .input-field {
-  flex: 1 1 48%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 20vw;
 }
 
-.input-field input {
+input {
   width: 200px;
+  border: 1px solid #e5e7eb;
+}
+
+input:focus-visible {
+  border: 1px solid blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+input:user-valid {
+  border: 1px solid green;
 }
 
 .submit-btn {
   width: fit-content;
   padding: 5px 15px;
   position: relative;
-  left: 20px;
-  top: -5vh;
+  left: 50px;
+  top: -4vh;
   background-color: darkblue;
   color: white;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
 .login-section {
   position: relative;
   top: -10vh;
-  padding: 20px;
+  padding: 20px 50px;
 }
