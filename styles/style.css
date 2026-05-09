@@ -60,6 +60,11 @@ body {
   padding: 20px 50px;
 }
 
+.form-header p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .form-motivation-message {
   width: 100%;
   font-size: 24px;
@@ -108,13 +113,14 @@ input:user-valid {
 
 .submit-btn {
   width: fit-content;
-  padding: 5px 15px;
+  padding: 15px 50px;
   position: relative;
   left: 50px;
   background-color: darkblue;
   color: white;
   border-radius: 5px;
   font-size: 18px;
+  font-weight: 700;
   top: -7vh;
 }
 
@@ -124,6 +130,24 @@ input:user-valid {
   padding: 20px 50px;
 }
 
+.pass-req-wrappper {
+  width: fit-content;
+}
+
+.pass-req-wrapper input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.password-error {
+  display: block;
+  margin-top: 10px;
+  color: #c62828;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .password-requirements {
   font-size: 12px;
   color: gray;
@@ -131,4 +155,23 @@ input:user-valid {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.invalid {
+  transition: color 0.2s ease;
+  color: rgba(255, 0, 0, 1);
+}
+
+.valid {
+  color: rgba(0, 210, 0, 1);
 }
