@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./script/form.js" defer></script>
+    <script src="https://kit.fontawesome.com/c21d2082d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,14 +51,15 @@
                         <input type="email" id="email" name="email" placeholder="example@mail.com" required />
                     </div>
                     <div class="input-field">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="tel" id="phone_number" name="phone_number" />
+                        <label for="phone_number">Phone Number
+                            <span class="tel-example">Ex. 123-456-7890</span>
+                        </label>
+                        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                     </div>
                     <div class="input-field" id="password-wrapper">
                         <label for="password">*Password</label>
                         <input type="password" id="password" name="password"
                             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required />
-                        <!-- <ul class="password-requirements"> -->
                         <ul>
                             <li class="pass-req" id="lowercase">Lowercase letter</li>
                             <li class="pass-req" id="uppercase">Uppercase letter</li>
@@ -65,37 +67,8 @@
                             <li class="pass-req" id="special">Special character (@$!%*?&)</li>
                             <li class="pass-req" id="length">8 characters minimum</li>
                         </ul>
-                        <!-- <label class="pass-req-wrapper">
-                                Must be at least 8 characters long
-                                <input type="checkbox" class="is-eight-chars-long pass-req" />
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="pass-req-wrapper">
-                                Must include one upper case letter
-                                <input type="checkbox" name="one-upper"
-                                    class="includes-one-uppercase-letter pass-req" />
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="pass-req-wrapper">
-                                Must include one lower case letter
-                                <input type="checkbox" name="one-lower"
-                                    class="includes-one-lowercase-letter pass-req" />
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="pass-req-wrapper">
-                                Must include at least one number
-                                <input type="checkbox" name="one-number" class="includes-one-number pass-req" />
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="pass-req-wrapper">
-                                Must include at least one special character(@$!%*?&)
-                                <input type="checkbox" name="one-special-char"
-                                    class="includes-one-special-char pass-req" />
-                                <span class="checkmark"></span>
-                            </label>
-                        </ul> -->
                     </div>
-                    <div class="input-field">
+                    <div class="input-field confirm-password-wrapper">
                         <label for="confirm_password">*Confirm Password</label>
                         <input type="password" id="confirm_password" name="confirm_password" required />
                     </div>

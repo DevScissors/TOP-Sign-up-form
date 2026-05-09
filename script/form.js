@@ -7,7 +7,6 @@ const includesLowerCaseLetter = document.querySelector(".includes-one-lowercase-
 const includesNumber = document.querySelector(".includes-one-number");
 const includesSpecialChar = document.querySelector(".includes-one-special-char");
 
-
 function showPasswordError(message) {
     let passErrSpan = confirmPasswordInput.nextElementSibling;
 
