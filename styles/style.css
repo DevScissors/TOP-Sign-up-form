@@ -131,6 +131,11 @@ input:user-valid {
   margin-left: 2vw;
 }
 
+.submit-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
 .login-section {
   width: -webkit-fill-available;
   margin-top: 2vh;
