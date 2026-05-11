@@ -31,12 +31,12 @@ function clearPasswordError() {
 function checkIfPasswordsMatch() {
     if (!confirmPasswordInput.value) {
         clearPasswordError();
-        submitButton.disabled = true;
         return;
     }
 
     if (passwordInput.value !== confirmPasswordInput.value) {
         showPasswordError("Passwords must match!");
+        submitButton.disabled = true;
     } else {
         clearPasswordError();
         submitButton.disabled = !isFormValid();
